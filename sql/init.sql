@@ -1,0 +1,11 @@
+DROP DATABASE IF EXISTS Combustivel;
+CREATE DATABASE Combustivel;
+USE Combustivel;
+
+CREATE TABLE Abastecimento (
+  idAbastecimento INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  nome VARCHAR(255) NOT NULL,
+  data DATE NOT NULL,
+  valor DECIMAL(10, 2) NOT NULL,
+  litros DECIMAL(10, 3) NOT NULL
+);
